@@ -213,6 +213,17 @@ body {
   background-color: #b59f5b;
   margin-top: 10px;
  }
+ 
+ .trend-text {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+ }
 
  .category-wrap {
    padding-top: 28px;
@@ -224,8 +235,7 @@ body {
  
  
   .category {
-   display: flex;
-   
+   display: flex;   
    min-height: 320px;
    width: 24.8%;
    position: relative;
@@ -264,12 +274,11 @@ body {
     background: url("../img/trend4.jpg") center no-repeat;
     background-size: cover;
   }
-
-   .trend-description {
+      .trend-description {
      z-index: 5;    
      color: #ffffff;
      border: 3px solid #b59f5b;
-     max-width: 345px;
+     width: 93%;
      font-family: "Open Sans";
      font-size: 20px;
      font-weight: 700;
@@ -531,6 +540,99 @@ body {
   margin-top: 14px;
 }
 
+.shop {
+  min-width: 1200px;;
+}
+.shop-title {
+  text-align: center;
+  padding-top: 59px;
+  color: #0f0d0e;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.shop-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 67px;
+  height: 4px;
+  background-color: #b59f5b;
+  margin-top: 10px;
+ }
+ .shop-text { 
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+ }
+ 
+ .shop-wrap {
+   padding-top: 28px;
+   display: flex;
+   justify-content: space-between;
+   max-width: 1170px;
+   flex-wrap: wrap;
+   margin: 0 auto;
+ }
+ 
+ .products {
+  padding: 0 22px 25px;
+  width: 346px;
+  display: flex;
+  flex-direction: column;
+ }
+  .product-picture {
+    min-height: 205px;
+  }
+
+  .product1 {
+    background: url("../img/shop-item-desk1.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .product-border {
+    padding-bottom: 5px;
+    margin-top: -25px;
+    outline: 3px solid #b59f5b;
+    outline-offset: 20px;
+    flex-grow: 1;
+  }
+
+  .product-title {
+    color: #0f0d0e;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 57px;
+  }
+  .product-text {
+    color: #0f0d0e;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+}
+.product-text-link {
+  color: #b59f5b;
+}
+.product-text-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
 /* footer */
 .footer {
   padding-bottom: 40px;
@@ -604,6 +706,7 @@ body {
   text-align: center;
 }
 
+
  /* Медиа запросы для секции сейчас в трендн*/
  
  @media (width: 768px) {
@@ -634,10 +737,10 @@ body {
  }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation:portrait) {
-     .category {
+    .category {
      width: 49.6%;
    } 
-   .category:nth-child(-n+2) {
+    .category:nth-child(-n+2) {
      margin-bottom: 1px;
   }
 }  
@@ -658,7 +761,7 @@ body {
     /* flex-wrap: wrap; */
 
     /* width: 49.6%; */
-  }
+  /* } */
   /* .category:nth-child(odd) {
     padding-right: 3px;
   }
@@ -677,4 +780,4 @@ body {
   .heading-text {
     font-size: 2.5em; */
   /* }
-медиа запросы heder */ */
+медиа запросы heder */ 
